@@ -12,6 +12,7 @@
     'data': [
         'views/sale_order_modification_views.xml',
 
+        'report/sale_report_inherit.xml',
     ],
     'application': True,
 }
