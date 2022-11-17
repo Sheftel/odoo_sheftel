@@ -11,8 +11,8 @@ class SaleOrder(models.Model):
     test = fields.Char(
         string="Test",
         default=random.random(),
-        compute="_test_quotation_update",
-        readonly=False
+        copy=False,
+        compute="_test_quotation_update"
     )
 
     @api.depends("date_order", "amount_total")
